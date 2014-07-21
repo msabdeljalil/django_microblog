@@ -2,8 +2,7 @@ Django==1.6.2
 # PAM==0.4.2
 PAM==0.1.4
 Pillow==2.4.0
-South==0.8.4
-Twisted-Core==13.2.0
+# Twisted-Core==13.2.0
 Twisted-Web==13.2.0
 Unidecode==0.04.16
 adium-theme-ubuntu==0.3.4
