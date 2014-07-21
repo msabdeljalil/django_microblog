@@ -6,7 +6,7 @@ Pillow==2.4.0
 # Twisted-Web==13.2.0
 Unidecode==0.04.16
 # adium-theme-ubuntu==0.3.4
-apt-xapian-index==0.45
+# apt-xapian-index==0.45
 # argparse==1.2.1
 # ccsm==0.9.11.1
 # chardet==2.2.1
@@ -28,11 +28,10 @@ django-tastypie==0.11.0
 django-toolbelt==0.0.1
 duplicity==0.6.23
 gunicorn==18.0
-html5lib==0.999
-httplib2==0.8
-jsonfield==0.9.20
-lockfile==0.8
-lxml==3.3.3
+# html5lib==0.999
+# jsonfield==0.9.20
+# lockfile==0.8
+# lxml==3.3.3
 oauthlib==0.6.1
 oneconf==0.3.7
 pexpect==3.1
