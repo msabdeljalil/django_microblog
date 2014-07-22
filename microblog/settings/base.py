@@ -158,7 +158,7 @@ STATICFILES_DIRS = (
     # Put stings here, like "/home/html/static" or "c:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute not relative paths
-    root("assets")
+    root("assets"),
 )
 
 # While STATICFILES_DIRS searches 'where', this searches 'how'
@@ -186,7 +186,7 @@ TEMPLATE_DIRS = (
     # Put stings here, like "/home/html/static" or "c:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute not relative paths
-    root("..", "templates")
+    root("..", "templates"),
 )
 
 # Also some stuff on loggers that I was too lazy to copy over...
