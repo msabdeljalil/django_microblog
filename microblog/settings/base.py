@@ -40,7 +40,7 @@ TEMPLATE_DEBUG = False
 
 # -------------------VIDEO----------------
 # He talks about this...i should have listened
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 # People who get e
 # Names and email addresses that are considered to be admins capable of
@@ -104,14 +104,29 @@ WSGI_APPLICATION = 'microblog.wsgi.application'
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
 import dj_database_url
-# DATABASES = {'default': dj_database_url.config()}
+DATABASES = {'default': dj_database_url.config()}
 DATABASES['default'] = dj_database_url.config()  # From StackOverflow
 
-# Internationalization
-# https://docs.djangoproject.com/en/1.6/topics/i18n/
+# if os.environ['LOCAL']=='True':
+#     if os.environ.get('LOCAL_SQLITE'):
+#       DATABASES = DATABASES_SQLITE
+#     else:
+#       DATABASES = DATABASES_POSTGREQL
+# else:
+#     import dj_database_url
+#     DATABASES = { 'default': dj_database_url.config() }
 
+
+# ----------------HEROKU ADDED-----------------------
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# ----------------/Heroku Added----------------------
+
+
+# Internationalization https://docs.djangoproject.com/en/1.6/topics/i18n/
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'America/Chicago'
 
 # If False, D will make some optimizations so as not to load
