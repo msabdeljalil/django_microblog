@@ -105,7 +105,7 @@ WSGI_APPLICATION = 'microblog.wsgi.application'
 
 import dj_database_url
 DATABASES = {'default': dj_database_url.config()}
-DATABASES['default'] = dj_database_url.config()  # From StackOverflow
+# DATABASES['default'] = dj_database_url.config()  # From StackOverflow
 
 # if os.environ['LOCAL']=='True':
 #     if os.environ.get('LOCAL_SQLITE'):
